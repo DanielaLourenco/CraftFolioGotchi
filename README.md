@@ -1,0 +1,2 @@
+# CraftFolioGotchi
+O CraftFolioGotchi® é um sistema Web que dá a seus usuários a (a) possibilidade de criar e personalizar uma (e apenas uma) página/mundo. Nela, ele pode colocar (b) textos e galerias de imagens mostrando os seus trabalhos, ou seja, seu portfolio. Além disso, cada usuário possui (a,c) um personagem/avatar que pode ser controlado por ele e pode: andar no seu próprio mundo ou visitar o mundo de outros usuários.
