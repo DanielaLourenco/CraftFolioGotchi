@@ -1,7 +1,7 @@
 var myGamePiece;
 
 function startGame() {
-    myGamePiece = new component(130, 130, "img/monstroD.gif", (screen.width / 2), (screen.height / 1.7), "image");
+    myGamePiece = new component(130, 130, "img/monstroD.gif", (screen.width / 2), (screen.height / 2), "image");
     myGameArea.start();
 }
 
