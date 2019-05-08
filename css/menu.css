@@ -1,7 +1,7 @@
 /* header */
 
 .header {
-  background: linear-gradient(to bottom, #f46b45, #eea849);
+  background: linear-gradient(to bottom, #ed2553 0%, #ff5050 100%);
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   top: 0;
@@ -9,8 +9,9 @@
   z-index: 3;
 }
 
+
 .header ul {
-  background: linear-gradient(to bottom, #f46b45, #eea849);
+  background: linear-gradient(to bottom, #ed2553 0%, #ff5050 100%);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -118,6 +119,7 @@
 #edicao {
  visibility: hidden;
 }
+
 
 @media (min-width: 48em) {
   .header li {

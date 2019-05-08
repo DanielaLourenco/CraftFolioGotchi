@@ -7,24 +7,45 @@
       <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,latin-ext'>
       <link rel="stylesheet" href="css/mundo.css">
       <link rel="stylesheet" href="css/menu.css">
+	   <link rel="stylesheet" href="css/seletorCor.css">
    </head>
    <body>
       <div class="materialContainer"></div>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src="js/avatar.js"></script>
+	  <script src="js/menu.js"></script>
+	   <script src="js/seletorCor.js"></script>
    </body>
    <body onload="startGame()">
-      <header class="header">
-         <a href="" class="logo">CraftFolioGotchi®</a>
-         <input class="menu-btn" type="checkbox" id="menu-btn" />
-         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-         <ul class="menu">
-            <li><a href="#work">Modo de Visualização</a></li>
-            <li><a href="#about">Modo de Edição</a></li>
-            <li><a href="#contact">Logout</a></li>
-         </ul>
-      </header>
-      <div class="ground"></div>
+	  <div class="header" id="visualizao">
+		  <header class="header">
+			 <a href="" class="logo">CraftFolioGotchi®</a>
+			 <input class="menu-btn" type="checkbox" id="menu-btn" />
+			 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			 <ul class="menu">
+				<li><a onclick="abrirEdicao()">Modo de Edição</a></li>         
+				<li><a onclick="logout()">Logout</a></li>
+			 </ul>
+		  </header>
+	  </div>
+	  <div class="header" id="edicao">
+		  <header class="header">
+			 <a href="" class="logo">CraftFolioGotchi®</a>
+			 <input class="menu-btn" type="checkbox" id="menu-btn" />
+			 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			 <ul class="menu">
+				<li><a onclick="abrirVisualizacao()">Modo de Visualização</a></li>         
+				<li><a onclick="corChao()">Editar o chão</a></li>	
+				<li><a onclick="myFunction()">Editar o céu</a></li>  
+				<li><a onclick="myFunction()">Galeria de Widgets</a></li>  
+				<li><a onclick="logout()">Logout</a></li>
+			 </ul>
+		  </header>
+	  </div>
+	  <div class="container">
+   
+	  
+      <div class="ground" id="chao"></div>
       <div class="mountain-one">
          <div class="mountain-left"></div>
          <div class="mountain-right"></div>
@@ -58,5 +79,27 @@
          <div class="shrub shrub-three"></div>
          <div class="water"></div>
       </div>
+	  
+	  <div class="colorpicker" id="colorpicker">
+         <span key="picker" class="picker" id="picker">
+            <h3 class="description">COR</h3>
+            <div class="swatch" id="color">
+            </div>
+            <h6 class="description">MATIZ</h6>
+            <div class="slider-container">
+               <input name="hue" type="range" min="1" max="300" value="130" class="slider hue" />
+            </div>
+            <h6 class="description">SATURAÇÃO</h6>
+            <div class="slider-container">
+               <input name="sat" id="sat" type="range" min="1" max="100" value="60" class="slider sat" />
+            </div>
+            <h6 class="description">LUZ</h6>
+            <div class="slider-container">
+               <input name="light" type="range" min="1" max="100" value="55" class="slider light" />
+            </div>
+      </div>
+      </span>
+      </div>
+</div>
    </body >
 </html>
