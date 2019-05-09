@@ -66,9 +66,12 @@ a{
 
 
 .plaquinha {
-  z-index:1;
-  bottom: 65vh;
-  right: 158vh;
+  height: 20vh; 
+  width: 20vh;
+  bottom:35vh;
+    left: 50vh;
+    z-index: 1;
+	position: fixed;
 }
 
 .caixaTexto {
