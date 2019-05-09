@@ -68,8 +68,8 @@ function updateGameArea() {
         myGamePiece.image.src = "img/monstroD.gif";
         myGamePiece.speedX = 1;
     }
-    if (myGameArea.key && myGameArea.key == 38) {
-        myGamePiece.speedY = -1;
+    if (myGameArea.key && myGameArea.key == 38) {		
+        myGamePiece.speedY = -1;		
     }
     if (myGameArea.key && myGameArea.key == 40) {
         myGamePiece.speedY = 1;

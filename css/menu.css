@@ -118,6 +118,9 @@
  visibility: hidden;
 }
 
+#rotatescroll{
+ visibility: hidden;
+}
 
 @media (min-width: 48em) {
   .header li {

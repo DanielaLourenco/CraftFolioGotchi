@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="css/mundo.css">
       <link rel="stylesheet" href="css/menu.css">
 	   <link rel="stylesheet" href="css/seletorCor.css">
+	   <link rel="stylesheet" href="css/galeria.css">
    </head>
    <body>
       <div class="materialContainer"></div>
@@ -15,6 +16,7 @@
       <script src="js/avatar.js"></script>
 	  <script src="js/menu.js"></script>
 	   <script src="js/seletorCor.js"></script>
+	   <script src="js/galeria.js"></script>
    </body>
    <body onload="startGame()">
 	  <div class="header" id="visualizao">
@@ -38,6 +40,7 @@
 				<li><a onclick="editarChao()">Editar o chão</a></li>	
 				<li><a onclick="editarCeu()">Editar o céu</a></li>  
 				<li><a onclick="galeriaWidgets()">Galeria de Widgets</a></li>  
+				<li><a onclick="caixaTexto()">Caixa de texto</a></li>  
 				<li><a onclick="logout()">Logout</a></li>
 			 </ul>
 		  </header>
@@ -97,6 +100,50 @@
                <input name="light" type="range" min="1" max="100" value="55" class="slider light" />
             </div>
       </div>
+	  <div class="slider-wrapper">
+
+  <div class="rotatescroll" id="rotatescroll">
+    <div class="viewport">
+      <ul class="overview">
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-qYs3ZOJX-xg/VcoW14eR7uI/AAAAAAAADII/yAy7HLAr-ds/s800-Ic42/Southend-on-Sea-England_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-vZR6Rjpv3Uw/VcoW01PFRiI/AAAAAAAADII/F4N3YtK0mTA/s800-Ic42/Kylemore_County-Galway_Ireland_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-6twGYRW9qec/VcoW1E5Fj2I/AAAAAAAADII/xzsBLnCTuIs/s800-Ic42/Kidwelly-Carmarthen-Wales_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-TFeJJDYwyYw/VcoW1ATUTyI/AAAAAAAADII/GHVafrqce-c/s800-Ic42/Guernsey-coast-at-Gouffre_Channel-Islands_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-87WIsl0qnqE/VcoW2euL1PI/AAAAAAAADII/FFnVShlNvCY/s800-Ic42/Vest-Agder_Lindesnes_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-rcW7QNlhexM/VcoW1E9f5qI/AAAAAAAADII/zDpGAwGUuoE/s800-Ic42/Prins-Hendrikkade-Amsterdam-Holland_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-MF0cIdb1OtY/VcoW23sXmHI/AAAAAAAADII/MFHcCy-vSOI/s800-Ic42/bridges-Meuse-Sambre-Namur-Belgium_350x350.jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-iamZ6JKpjJI/VcoW1SfQxyI/AAAAAAAADII/zTQU2uKVY6w/s800-Ic42/Sorrento-Naples-Italy_350x350.jpg" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.viewport -->
+
+    <div class="dot"></div>
+    <div class="overlay overlay-interaction" id="overlayInteraction"></div>
+    <div class="overlay overlay-static"></div>
+    <div class="overlay overlay-active" id="overlayActive"></div>
+    <div class="thumb"></div>
+
+  </div>
+  <!-- /.rotatescroll -->
+</div>
+<!-- /.slider-wrapper -->
+
       </span>
       </div>
 </div>
