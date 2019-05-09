@@ -38,8 +38,16 @@ const colorChange = () => {
     console.log(`${getHSL()} hex: ${getHEX()}`);
     document.getElementById('sat').style.backgroundColor = getHSL();
 	
-	const chao = document.querySelector('.ground');
-	 chao.style.backgroundColor = getHSL();
+	let tipoEdicao = localStorage.getItem("tipoEdicao");
+	if(tipoEdicao == "chao")
+	{
+		const chao = document.querySelector('.ground');
+		chao.style.background = getHSL();
+	}
+	else if(tipoEdicao == "ceu")
+	{		
+		document.body.style.backgroundColor = getHSL();
+	} 
 };
 
 const getHEX = () => {

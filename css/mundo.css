@@ -38,8 +38,7 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--sky);
-  background: linear-gradient(to bottom, var(--sky) 0%, var(--white)100%);
+  background-color: #87ceeb;
 }
 
 .ground {
@@ -51,8 +50,7 @@ body {
   bottom: -1px;
   left: 0;
   right: 0;
-  
-  background-color: linear-gradient(to bottom, var(--grass-top) 0%, var(--grass)100%);
+  background: linear-gradient(to bottom, var(--grass-top) 0%, var(--grass)100%);
 }
 
 .mountain-one {

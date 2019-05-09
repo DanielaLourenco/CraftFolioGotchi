@@ -1,12 +1,6 @@
 function logout() {	 
 	alert("Tem certeza que deseja sair?");
-	location.replace("index.thml")
- /* var x = document.getElementById("visualizacao");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }*/
+	location.replace("./index.thml")
 }
 
 function abrirEdicao() {	 
@@ -18,13 +12,21 @@ function abrirEdicao() {
 function abrirVisualizacao() {	 
 	document.getElementById("visualizao").style.visibility = "visible";
 	document.getElementById("edicao").style.visibility = "hidden";
+	document.getElementById("colorpicker").style.visibility = "hidden";
+}
+
+function editarChao() {	
+  document.getElementById("colorpicker").style.visibility = "visible";
+  localStorage.setItem("tipoEdicao", "chao");
  
 }
 
-function corChao() {	
-  alert("baaa"); 
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "color");
-  document.body.appendChild(x);
+function editarCeu() {	 
+  document.getElementById("colorpicker").style.visibility = "visible";
+   localStorage.setItem("tipoEdicao", "ceu");
  
+}
+
+function galeriaWidgets() {	 
+	document.getElementById("colorpicker").style.visibility = "hidden";
 }

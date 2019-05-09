@@ -1,12 +1,4 @@
 
- body {
-     
-     position: relative;
-     z-index: 0;
-     display:flex;
-     align-items: center;
-     justify-content: center;
-}
  .description {
      font-size: 1em;
      display: block;
@@ -170,4 +162,8 @@ box-shadow: 13px 11px 28px 3px rgba(0,0,0,0.24);
      -webkit-box-sizing: border-box;
      border: 2px white solid;
      border-radius: 20px;
+}
+
+#colorpicker {
+ visibility: hidden;
 }
