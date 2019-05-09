@@ -1,3 +1,7 @@
+@font-face {
+     font-family: helveticaneue;
+     src: url('HelveticaNeueLTStd-UltLt.otf');
+}
 :root {
   --black: #111;
   --white: #fff;
@@ -40,6 +44,12 @@ body {
   min-height: 100vh;
   background: var(--sky);
   background-color: var(--sky);
+  color: #005580;
+  font-weight: bold;
+}
+
+a{
+  font:15px Tahoma, Sans-serif;
 }
 
 .ground {
@@ -52,6 +62,18 @@ body {
   left: 0;
   right: 0;
   background: linear-gradient(to bottom, var(--grass-top) 0%, var(--grass)100%);
+}
+
+
+.plaquinha {
+  z-index:1;
+  bottom: 65vh;
+  right: 158vh;
+}
+
+.caixaTexto {
+  z-index:1;
+
 }
 
 
@@ -273,6 +295,59 @@ ___________*/
 .mountain-cap-5 { left: -20px; }
 .mountain-cap-6 { left: 5px; }
 .mountain-cap-7 { left: -20px; }
+
+/*Sol*/
+
+.sun {
+    margin: 100px auto;
+    position:relative;
+    bottom:45vh;
+    background:red;
+    border-radius: 50%;
+    width:300px;
+    height:300px;
+    border:8px dotted #f5f5f5;
+    background-image: -webkit-radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,.6));
+    background-image: -moz-radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,.6));
+    background-image: -o-radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,.6));
+    background-image: -ms-radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,.6));
+    background-image: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,.6));
+}
+.sun:before {
+    background: rgb(255,162,0);
+    background-image: -webkit-radial-gradient(circle, rgba(255,0,0,0) 50%, rgba(255,0,0,.6));
+    background-image: -moz-radial-gradient(circle, rgba(255,0,0,0) 50%, rgba(255,0,0,.6));
+    background-image: -o-radial-gradient(circle, rgba(255,0,0,0) 50%, rgba(255,0,0,.6));
+    background-image: -ms-radial-gradient(circle, rgba(255,0,0,0) 50%, rgba(255,0,0,.6));
+    background-image: radial-gradient(circle, rgba(255,0,0,0) 50%, rgba(255,0,0,.6));
+    content: "";
+    border-radius: 50%;
+    border:8px dotted red;
+    width: 200px;
+    height:200px;
+    position: absolute;
+    top:42px;
+    left:42px;
+}
+.sun:after {
+    background:yellow;
+    background-image: -webkit-radial-gradient(circle, rgba(255,162,0,0) 50%, rgba(255,162,0,.6));
+    background-image: -moz-radial-gradient(circle, rgba(255,162,0,0) 50%, rgba(255,162,0,.6));
+    background-image: -o-radial-gradient(circle, rgba(255,162,0,0) 50%, rgba(255,162,0,.6));
+    background-image: -ms-radial-gradient(circle, rgba(255,162,0,0) 50%, rgba(255,162,0,.6));
+    background-image: radial-gradient(circle, rgba(255,162,0,0) 50%, rgba(255,162,0,.6));
+    content: "";
+    border-radius: 50%;
+    border:8px dotted rgb(255,162,0);
+    width: 100px;
+    height:100px;
+    position: absolute;
+    top:92px;
+    left:92px;
+}
+
+
+
 
 
 

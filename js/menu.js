@@ -31,14 +31,27 @@ function editarCeu() {
 }
 
 function galeriaWidgets() {	 
-
 	document.getElementById("colorpicker").style.visibility = "hidden";
 	document.getElementById("rotatescroll").style.visibility = "visible";
 }
 
-function caixaTexto() {
-	var x = document.createElement("INPUT");
-	x.setAttribute("type", "text");
-	x.setAttribute("value", "Hello World!");
-	document.body.appendChild(x);
+
+function caixaTexto() {	
+    var a = document.createElement("TEXTAREA");
+	input.className = 'myCustomTextarea';
+    var t = document.createTextNode("this is a test");
+    a.appendChild(t);
+    var nome = "caixaTexto";
+    document.body.appendChild(a,nome);
+}
+
+function plaquinha(){
+  var img = document.createElement("img");
+  img.src = "img/plaquinha.png"; 
+  img.height = 100; 
+  img.width  = 100;
+  var class_name = "plaquinha";
+  img.setAttribute("class", class_name);
+  document.body.appendChild(img);
+
 }
