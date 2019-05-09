@@ -1,245 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <title>Mundo</title>
-      <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-      <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,latin-ext'>
-      <link rel="stylesheet" href="css/mundo.css">
-      <link rel="stylesheet" href="css/menu.css">
-	   <link rel="stylesheet" href="css/seletorCor.css">
-	   <link rel="stylesheet" href="css/galeria.css">
-   </head>
-   <body>
-      <div class="materialContainer"></div>
-      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <script src="js/avatar.js"></script>
-	  <script src="js/menu.js"></script>
-	   <script src="js/seletorCor.js"></script>
-	   <script src="js/galeria.js"></script>
-   </body>
-   <body onload="startGame()">
-	  <div class="header" id="visualizao">
-		  <header class="header">
-			 <a href="" class="logo">CraftFolioGotchi®</a>
-			 <input class="menu-btn" type="checkbox" id="menu-btn" />
-			 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			 <ul class="menu">
-				<li><a onclick="abrirEdicao()">Modo de Edição</a></li>         
-				<li><a onclick="logout()">Logout</a></li>
-			 </ul>
-		  </header>
-	  </div>
-	  <div class="header" id="edicao">
-		  <header class="header">
-			 <a href="" class="logo">CraftFolioGotchi®</a>
-			 <input class="menu-btn" type="checkbox" id="menu-btn" />
-			 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			 <ul class="menu">
-				<li><a id="font" onclick="abrirVisualizacao()">Modo de Visualização</a></li>         
-				<li><a id="font" onclick="editarChao()">Chão</a></li>	
-				<li><a id="font" onclick="editarCeu()">Céu</a></li>
-				<li><a id="font" onclick="galeriaWidgets()">Galeria de Widgets</a></li>  
-				<li><a id="font" onclick="caixaTexto()">Caixa de texto</a></li>   
-				<li><a id="font" onclick="logout()">Logout</a></li>
-			 </ul>
-		  </header>
-	  </div>
-	  <div class="container">   
-	  
-      <div class="ground" id="chao"></div>
-	<div 
-		class="sun">
-    </div>
-	 <div class="mountain">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mundo</title>
+		<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,latin-ext'>
+		<link rel="stylesheet" href="css/mundo.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/seletorCor.css">
+		<link rel="stylesheet" href="css/galeria.css">
+	</head>
+	<body>
+		<div class="materialContainer"></div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="js/avatar.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/seletorCor.js"></script>
+		<script src="js/galeria.js"></script>
+	</body>
+	<body onload="startGame()">
+		<div class="header" id="visualizao">
+			<header class="header">
+				<a href="" class="logo">CraftFolioGotchi®</a>
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+				<ul class="menu">
+					<li><a onclick="abrirEdicao()">Modo de Edição</a></li>         
+					<li><a onclick="logout()">Logout</a></li>
+				</ul>
+			</header>
 		</div>
-	  </div>
-	  <div class="mountain-two">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
+		<div class="header" id="edicao">
+			<header class="header">
+				<a href="" class="logo">CraftFolioGotchi®</a>
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+				<ul class="menu">
+					<li><a id="font" onclick="abrirVisualizacao()">Modo de Visualização</a></li>         
+					<li><a id="font" onclick="editarChao()">Chão</a></li>	
+					<li><a id="font" onclick="editarCeu()">Céu</a></li>
+					<li><a id="font" onclick="galeriaWidgets()">Galeria de Widgets</a></li>  
+					<li><a id="font" onclick="video()">video</a></li>   
+					<li><a id="font" onclick="logout()">Logout</a></li>
+				</ul>
+			</header>
 		</div>
-	  </div>
-	   <div class="mountain-three">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
+		<div class="container">   
+			<div class="ground" id="chao"></div>
+			<div class="sun"></div>
+			<div class="mountain">
+				<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
 		</div>
-	  </div>
-	  </div>
-	   <div class="mountain-four">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
+		<div class="mountain-two">
+			<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
 		</div>
-	  </div>
-	  </div>
-	   <div class="mountain-five">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
+		<div class="mountain-three">
+			<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
 		</div>
-	  </div>
-	  </div>
-	   <div class="mountain-six">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
+		<div class="mountain-four">
+			<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
 		</div>
-	  </div>
-	  </div>
-	  <div class="mountain-seven">
-		<div class="mountain-top">
-		  <div class="mountain-cap-1"></div>
-		  <div class="mountain-cap-2"></div>
-		  <div class="mountain-cap-3"></div>
-          <div class="mountain-cap-4"></div>
-          <div class="mountain-cap-5"></div>
-          <div class="mountain-cap-6"></div>
-          <div class="mountain-cap-7"></div>
-	    </div>
-	  </div>
+		<div class="mountain-five">
+			<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
+		</div>
+		<div class="mountain-six">
+			<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
+		</div>
+		<div class="mountain-seven">
+			<div class="mountain-top">
+				<div class="mountain-cap-1"></div>
+				<div class="mountain-cap-2"></div>
+				<div class="mountain-cap-3"></div>
+				<div class="mountain-cap-4"></div>
+				<div class="mountain-cap-5"></div>
+				<div class="mountain-cap-6"></div>
+				<div class="mountain-cap-7"></div>
+			</div>
+		</div>
+		<div id="background-wrap">
+			<div class="x1">
+				<div class="cloud"></div>
+			</div>
+			<div class="x2">
+				<div class="cloud"></div>
+			</div>
+			<div class="x3">
+				<div class="cloud"></div>
+			</div>
+		</div>
+		<div class="tree-one">
+			<div class="trunk"></div>
+			<div class="shrub shrub-one"></div>
+			<div class="shrub shrub-two"></div>
+			<div class="shrub shrub-three"></div>
+		</div>
+		<div class="tree-two">
+			<div class="trunk"></div>
+			<div class="shrub shrub-one"></div>
+			<div class="shrub shrub-two"></div>
+			<div class="shrub shrub-three"></div>
+		</div>
+		<div class="tree-three">
+			<div class="trunk"></div>
+			<div class="shrub shrub-one"></div>
+			<div class="shrub shrub-two"></div>
+			<div class="shrub shrub-three"></div>
+		</div>
+		<div class="tree-four">
+			<div class="trunk"></div>
+			<div class="shrub shrub-one"></div>
+			<div class="shrub shrub-two"></div>
+			<div class="shrub shrub-three"></div>
+			<div class="water"></div>
+		</div>
 
-		
-      <div id="background-wrap">
-        <div class="x1">
-          <div class="cloud"></div>
-        </div>
-        <div class="x2">
-          <div class="cloud"></div>
-        </div>
-        <div class="x3">
-          <div class="cloud"></div>
-        </div>
-     </div>
-
-      <div class="tree-one">
-         <div class="trunk"></div>
-         <div class="shrub shrub-one"></div>
-         <div class="shrub shrub-two"></div>
-         <div class="shrub shrub-three"></div>
-      </div>
-      <div class="tree-two">
-         <div class="trunk"></div>
-         <div class="shrub shrub-one"></div>
-         <div class="shrub shrub-two"></div>
-         <div class="shrub shrub-three"></div>
-      </div>
-      <div class="tree-three">
-         <div class="trunk"></div>
-         <div class="shrub shrub-one"></div>
-         <div class="shrub shrub-two"></div>
-         <div class="shrub shrub-three"></div>
-      </div>
-      <div class="tree-four">
-         <div class="trunk"></div>
-         <div class="shrub shrub-one"></div>
-         <div class="shrub shrub-two"></div>
-         <div class="shrub shrub-three"></div>
-         <div class="water"></div>
-      </div>
-
-
-      <img class="plaquinha" src="img/plaquinha.png">
-
-	  
-	  <div class="colorpicker" id="colorpicker">
-         <span key="picker" class="picker" id="picker">
-            <h3 class="description">COR</h3>
-            <div class="swatch" id="color">
-            </div>
-            <h6 class="description">MATIZ</h6>
-            <div class="slider-container">
-               <input name="hue" type="range" min="1" max="300" value="130" class="slider hue" />
-            </div>
-            <h6 class="description">SATURAÇÃO</h6>
-            <div class="slider-container">
-               <input name="sat" id="sat" type="range" min="1" max="100" value="60" class="slider sat" />
-            </div>
-            <h6 class="description">LUZ</h6>
-            <div class="slider-container">
-               <input name="light" type="range" min="1" max="100" value="55" class="slider light" />
-            </div>
-      </div>
-	  <div class="slider-wrapper">
-
-  <div class="rotatescroll" id="rotatescroll">
-    <div class="viewport">
-      <ul class="overview">
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-qYs3ZOJX-xg/VcoW14eR7uI/AAAAAAAADII/yAy7HLAr-ds/s800-Ic42/Southend-on-Sea-England_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-vZR6Rjpv3Uw/VcoW01PFRiI/AAAAAAAADII/F4N3YtK0mTA/s800-Ic42/Kylemore_County-Galway_Ireland_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-6twGYRW9qec/VcoW1E5Fj2I/AAAAAAAADII/xzsBLnCTuIs/s800-Ic42/Kidwelly-Carmarthen-Wales_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-TFeJJDYwyYw/VcoW1ATUTyI/AAAAAAAADII/GHVafrqce-c/s800-Ic42/Guernsey-coast-at-Gouffre_Channel-Islands_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-87WIsl0qnqE/VcoW2euL1PI/AAAAAAAADII/FFnVShlNvCY/s800-Ic42/Vest-Agder_Lindesnes_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-rcW7QNlhexM/VcoW1E9f5qI/AAAAAAAADII/zDpGAwGUuoE/s800-Ic42/Prins-Hendrikkade-Amsterdam-Holland_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-MF0cIdb1OtY/VcoW23sXmHI/AAAAAAAADII/MFHcCy-vSOI/s800-Ic42/bridges-Meuse-Sambre-Namur-Belgium_350x350.jpg" alt="" /></a>
-        </li>
-        <li>
-          <a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-iamZ6JKpjJI/VcoW1SfQxyI/AAAAAAAADII/zTQU2uKVY6w/s800-Ic42/Sorrento-Naples-Italy_350x350.jpg" alt="" /></a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.viewport -->
-
-    <div class="dot"></div>
-    <div class="overlay overlay-interaction" id="overlayInteraction"></div>
-    <div class="overlay overlay-static"></div>
-    <div class="overlay overlay-active" id="overlayActive"></div>
-    <div class="thumb"></div>
-
-  </div>
-  <!-- /.rotatescroll -->
-</div>
-<!-- /.slider-wrapper -->
-
-      </span>
-      </div>
-</div>
-   </body >
+		<img class="plaquinha"  src="img/plaquinha.png">
+		  
+		<div class="colorpicker" id="colorpicker">
+			<span key="picker" class="picker" id="picker">
+				<h3 class="description">COR</h3>
+				<div class="swatch" id="color"></div>
+				<h6 class="description">MATIZ</h6>
+				<div class="slider-container">
+					<input name="hue" type="range" min="1" max="300" value="130" class="slider hue" />
+				</div>
+				<h6 class="description">SATURAÇÃO</h6>
+				<div class="slider-container">
+					<input name="sat" id="sat" type="range" min="1" max="100" value="60" class="slider sat" />
+				</div>
+				<h6 class="description">LUZ</h6>
+				<div class="slider-container">
+					<input name="light" type="range" min="1" max="100" value="55" class="slider light" />
+				</div>
+				<div class="slider-wrapper">
+					<div class="rotatescroll" id="rotatescroll">
+						<div class="viewport">
+							<ul class="overview">
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-qYs3ZOJX-xg/VcoW14eR7uI/AAAAAAAADII/yAy7HLAr-ds/s800-Ic42/Southend-on-Sea-England_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-vZR6Rjpv3Uw/VcoW01PFRiI/AAAAAAAADII/F4N3YtK0mTA/s800-Ic42/Kylemore_County-Galway_Ireland_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-6twGYRW9qec/VcoW1E5Fj2I/AAAAAAAADII/xzsBLnCTuIs/s800-Ic42/Kidwelly-Carmarthen-Wales_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-TFeJJDYwyYw/VcoW1ATUTyI/AAAAAAAADII/GHVafrqce-c/s800-Ic42/Guernsey-coast-at-Gouffre_Channel-Islands_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-87WIsl0qnqE/VcoW2euL1PI/AAAAAAAADII/FFnVShlNvCY/s800-Ic42/Vest-Agder_Lindesnes_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-rcW7QNlhexM/VcoW1E9f5qI/AAAAAAAADII/zDpGAwGUuoE/s800-Ic42/Prins-Hendrikkade-Amsterdam-Holland_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-MF0cIdb1OtY/VcoW23sXmHI/AAAAAAAADII/MFHcCy-vSOI/s800-Ic42/bridges-Meuse-Sambre-Namur-Belgium_350x350.jpg" alt="" /></a></li>
+								<li><a href="http://www.baijs.com"><img src="https://lh3.googleusercontent.com/-iamZ6JKpjJI/VcoW1SfQxyI/AAAAAAAADII/zTQU2uKVY6w/s800-Ic42/Sorrento-Naples-Italy_350x350.jpg" alt="" /></a></li>
+							</ul>
+						</div>
+						<div class="dot"></div>
+						<div class="overlay overlay-interaction" id="overlayInteraction"></div>
+						<div class="overlay overlay-static"></div>
+						<div class="overlay overlay-active" id="overlayActive"></div>
+						<div class="thumb"></div>
+					</div>
+				</div>
+			</span>
+		</div>
+	</body >
 </html>

@@ -36,22 +36,36 @@ function galeriaWidgets() {
 }
 
 
+
+function video(){
+
+	
+	
+}
+
+
+
 function caixaTexto() {	
-    var a = document.createElement("TEXTAREA");
-	input.className = 'myCustomTextarea';
-    var t = document.createTextNode("this is a test");
-    a.appendChild(t);
-    var nome = "caixaTexto";
-    document.body.appendChild(a,nome);
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+  x.appendChild(t);
+  document.body.appendChild(x);
 }
 
 function plaquinha(){
-  var img = document.createElement("img");
-  img.src = "img/plaquinha.png"; 
-  img.height = 100; 
-  img.width  = 100;
-  var class_name = "plaquinha";
-  img.setAttribute("class", class_name);
-  document.body.appendChild(img);
-
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+  x.appendChild(t);
+  var nome = "plaquinha_text";
+  document.body.appendChild(x,nome);
 }
+function myFunction() {
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+
+
+
+
