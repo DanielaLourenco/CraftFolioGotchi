@@ -70,6 +70,15 @@ container .localizacao{
   justify-content: center;
 }
 
+#imglocation{
+  z-index:1;
+  position:fixed;
+  width: 18vh;
+  height: 18vh;
+  bottom:30vh;
+  left: 20vh;
+}
+
 #map {
   height: 200px;
   width: 200px;
@@ -90,22 +99,15 @@ button {
 }
 
 .buttonLocalizacao {
-  background-image: url("https://i.ya-webdesign.com/images/google-map-marker-png-2.png");
-  padding: 20px 38px;
-  font-size: 30px;
-  font-family: Helvetica;
-  border-radius: 4px;
-  bottom:35vh;
-  max-width:30vh;
-  max-height:35vh;
-  width: auto;
-  height: auto;
-  transform: scaleY(0.1);
-  transform: scaleX(0.4);
-  transform-origin: 50% 100%;
-  left: 20vh;
-  z-index: 1;
+  bottom:28vh;
+  left: 16vh;
+  z-index: 2;
   position: fixed;
+  width: 18vh;
+  height:18%;
+  color:#000;
+  background-color: transparent;
+  font-size: 2.7vh;
 }
 /*
 .buttonPlaquinha {
@@ -131,7 +133,7 @@ button {
    left: 60vh;
    z-index: 1;
    position: fixed;
-   font-size: 3vh;
+   font-size: 2.7vh;
     justify-content: center;
 }
 
