@@ -22,10 +22,7 @@ importer.url(`https://maps.googleapis.com/maps/api/js?key=${apiKey}`)
     console.log('hurray');
   });
 
-
-
-const locateMe = () => {
-  alert("chamou");
+const locateMe = () => { 
   navigator.geolocation.getCurrentPosition(success, error, {maximumAge: 10, timeout: 10000, enableHighAccuracy: true});
 }
 
@@ -63,8 +60,7 @@ document.querySelector('button').addEventListener('click', () => {
 });
 
 
-function showOnMap(position) {
-  alert("mostrar posição");
+function showOnMap(position) { 
   const pos = {
     lat: position.coords.latitude,
     lng: position.coords.longitude

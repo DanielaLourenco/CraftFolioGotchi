@@ -6,10 +6,7 @@
   box-sizing: inherit;
 }
 
-
-
 body {
-	
  
   box-sizing: border-box;
   min-height: 100%;
@@ -43,12 +40,12 @@ img {
 
 .rotatescroll {
 	
-	position: absolute;
-    top: 55px;
-    right: 0px;
-    z-index: 100;
-      border: 3px solid #ed2553;
-	  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 100;
+  border: 3px solid #ed2553;
+  padding: 10px;
 
   height: 390px;
   width: 390px;
