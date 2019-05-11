@@ -31,14 +31,41 @@ function editarCeu() {
 }
 
 function galeriaWidgets() {	 
-
 	document.getElementById("colorpicker").style.visibility = "hidden";
 	document.getElementById("rotatescroll").style.visibility = "visible";
 }
 
-function caixaTexto() {
-	var x = document.createElement("INPUT");
-	x.setAttribute("type", "text");
-	x.setAttribute("value", "Hello World!");
-	document.body.appendChild(x);
+
+
+function video(){
+
+	
+	
 }
+
+
+
+function caixaTexto() {	
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+
+function plaquinha(){
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+  x.appendChild(t);
+  var nome = "plaquinha_text";
+  document.body.appendChild(x,nome);
+}
+function myFunction() {
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+
+
+
+
