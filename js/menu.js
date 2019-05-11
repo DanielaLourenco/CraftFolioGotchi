@@ -6,7 +6,7 @@ function logout() {
 function abrirEdicao() {	 
 	document.getElementById("visualizao").style.visibility = "hidden";
 	document.getElementById("edicao").style.visibility = "visible";
- 
+	document.getElementById("myTextarea").disabled = false;
 }
 
 function abrirVisualizacao() {	 
@@ -14,6 +14,7 @@ function abrirVisualizacao() {
 	document.getElementById("visualizao").style.visibility = "visible";
 	document.getElementById("edicao").style.visibility = "hidden";
 	document.getElementById("colorpicker").style.visibility = "hidden";
+	document.getElementById("myTextarea").disabled = true;	
 }
 
 function editarChao() {	
